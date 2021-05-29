@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_47a7ce3a722c4708b20151bce64301ba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_47a7ce3a722c4708b20151bce64301ba" ></div>
+        
+</body>
+<script>    
+    
+            var map_47a7ce3a722c4708b20151bce64301ba = L.map(
+                "map_47a7ce3a722c4708b20151bce64301ba",
+                {
+                    center: [36.48755210716709, 127.25417828425252],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e82df255be494bc39987aedaa995c6e4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_47a7ce3a722c4708b20151bce64301ba);
+        
+    
+            var marker_cf06c888792e4a88ab5253001118dacf = L.marker(
+                [36.48755210716709, 127.25417828425252],
+                {}
+            ).addTo(map_47a7ce3a722c4708b20151bce64301ba);
+        
+    
+            var icon_545adea1f60244f6ac3357f468452cc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_cf06c888792e4a88ab5253001118dacf.setIcon(icon_545adea1f60244f6ac3357f468452cc8);
+        
+    
+        var popup_c9ebc203d7b5459897d79834eedf2050 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_681f0b1c0b6f47b8a7a727426d5d3101 = $(`<div id="html_681f0b1c0b6f47b8a7a727426d5d3101" style="width: 100.0%; height: 100.0%;">집</div>`)[0];
+            popup_c9ebc203d7b5459897d79834eedf2050.setContent(html_681f0b1c0b6f47b8a7a727426d5d3101);
+        
+
+        marker_cf06c888792e4a88ab5253001118dacf.bindPopup(popup_c9ebc203d7b5459897d79834eedf2050)
+        ;
+
+        
+    
+    
+            var marker_b026989414f54fd0984f7cd50a537450 = L.marker(
+                [36.355845392177216, 127.34289586922338],
+                {}
+            ).addTo(map_47a7ce3a722c4708b20151bce64301ba);
+        
+    
+            var icon_38de700dfe1f425dbcc5515d4bafcf17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b026989414f54fd0984f7cd50a537450.setIcon(icon_38de700dfe1f425dbcc5515d4bafcf17);
+        
+    
+        var popup_cdd2851800b5422d945f4b6bba4edcc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55b2803ad83245038cb3027d33cdbd8e = $(`<div id="html_55b2803ad83245038cb3027d33cdbd8e" style="width: 100.0%; height: 100.0%;">카페1</div>`)[0];
+            popup_cdd2851800b5422d945f4b6bba4edcc4.setContent(html_55b2803ad83245038cb3027d33cdbd8e);
+        
+
+        marker_b026989414f54fd0984f7cd50a537450.bindPopup(popup_cdd2851800b5422d945f4b6bba4edcc4)
+        ;
+
+        
+    
+    
+            var marker_6fd36698b18849608222246c1c8d2fad = L.marker(
+                [36.375380274851096, 127.31970895787448],
+                {}
+            ).addTo(map_47a7ce3a722c4708b20151bce64301ba);
+        
+    
+            var icon_a62a6b6fdc024071a13aa7d78532d889 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6fd36698b18849608222246c1c8d2fad.setIcon(icon_a62a6b6fdc024071a13aa7d78532d889);
+        
+    
+        var popup_c0e533e69f9d4038ba9ef006c4ca3545 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3776c54afc8d495c9569fe887fa3bc18 = $(`<div id="html_3776c54afc8d495c9569fe887fa3bc18" style="width: 100.0%; height: 100.0%;">카페2</div>`)[0];
+            popup_c0e533e69f9d4038ba9ef006c4ca3545.setContent(html_3776c54afc8d495c9569fe887fa3bc18);
+        
+
+        marker_6fd36698b18849608222246c1c8d2fad.bindPopup(popup_c0e533e69f9d4038ba9ef006c4ca3545)
+        ;
+
+        
+    
+    
+            var marker_3bea68802af045aaba18aeb3c5dbda93 = L.marker(
+                [36.39088501185242, 127.36552897107842],
+                {}
+            ).addTo(map_47a7ce3a722c4708b20151bce64301ba);
+        
+    
+            var icon_2590743874b24ad9a1a01ce39171bc9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3bea68802af045aaba18aeb3c5dbda93.setIcon(icon_2590743874b24ad9a1a01ce39171bc9f);
+        
+    
+        var popup_e3d4433f4a714e17a234d31f8bb17c40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_510d9c79b6be421cbe8041397161eec4 = $(`<div id="html_510d9c79b6be421cbe8041397161eec4" style="width: 100.0%; height: 100.0%;">학교</div>`)[0];
+            popup_e3d4433f4a714e17a234d31f8bb17c40.setContent(html_510d9c79b6be421cbe8041397161eec4);
+        
+
+        marker_3bea68802af045aaba18aeb3c5dbda93.bindPopup(popup_e3d4433f4a714e17a234d31f8bb17c40)
+        ;
+
+        
+    
+    
+            var marker_de9656592747413781161c4dcaf0bf39 = L.marker(
+                [36.374262841051994, 127.32403913853334],
+                {}
+            ).addTo(map_47a7ce3a722c4708b20151bce64301ba);
+        
+    
+            var icon_80a3b842c37d4e278d47c7145afc4c92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_de9656592747413781161c4dcaf0bf39.setIcon(icon_80a3b842c37d4e278d47c7145afc4c92);
+        
+    
+        var popup_d701a2f670d44fd1b3ef40bee46bf06a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd2259a78d30437d83ec547ae60e781b = $(`<div id="html_fd2259a78d30437d83ec547ae60e781b" style="width: 100.0%; height: 100.0%;">공원</div>`)[0];
+            popup_d701a2f670d44fd1b3ef40bee46bf06a.setContent(html_fd2259a78d30437d83ec547ae60e781b);
+        
+
+        marker_de9656592747413781161c4dcaf0bf39.bindPopup(popup_d701a2f670d44fd1b3ef40bee46bf06a)
+        ;
+
+        
+    
+</script>
